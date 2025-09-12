@@ -9,10 +9,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-              About Reliable Homeo Clinics
+              About Reliable Homeo Centre
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-slide-up">
-              Dedicated to providing gentle, natural healing through the time-tested principles of homeopathy
+              Hyderabad's trusted destination for ethical and scientific homeopathic care since 1949
             </p>
           </div>
         </div>
@@ -23,21 +23,25 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-foreground">Our Story</h2>
+              <h2 className="text-3xl font-bold text-foreground">Our Heritage</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Reliable Homeo Clinics was founded with a simple yet powerful vision: to bring the gentle, 
-                  effective healing of homeopathy to the people of Hyderabad. Our journey began with 
-                  experienced practitioners who believed in treating not just symptoms, but the whole person.
+                  Founded in 1949 by the late Dr. Badreuddin Siddiqui, Reliable Homeo Centre has served 
+                  generations of patients with unwavering commitment to ethical homeopathic practice. 
+                  Our practice upholds a legacy of healing excellence spanning over 60 years, providing 
+                  compassionate and effective treatment for diverse health conditions.
                 </p>
                 <p>
-                  With over a decade of combined experience, our team has helped thousands of patients 
-                  find relief from chronic conditions, acute ailments, and everything in between. We've built 
-                  our reputation on trust, compassion, and most importantly, results.
+                  Today, Dr. Nomaan Siddiqui (B.H.M.S, M.D. Hom), grandson of the founder, continues 
+                  this remarkable legacy as Managing Director. His dedication to the family tradition 
+                  is supported by notable contributions to national homeopathy boards and active 
+                  community leadership.
                 </p>
                 <p>
-                  Today, we proudly serve the community from our two convenient locations in Mehdipatnam 
-                  and Abids, making quality homeopathic care accessible to families across the city.
+                  Our heritage, expertise, and patient-first approach ensure every visitor receives 
+                  the highest standard of personalized homeopathic care. We've built our reputation 
+                  on trust, compassion, and most importantly, results that span three generations 
+                  of healing.
                 </p>
               </div>
             </div>
@@ -120,37 +124,61 @@ const About = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Meet Our Doctors</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Meet Dr. Nomaan Siddiqui</h2>
             <p className="text-lg text-muted-foreground">
-              Experienced practitioners committed to your health and well-being
+              Managing Director & Lead Homeopathic Physician continuing the family legacy
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-card rounded-xl shadow-card p-8 text-center">
-              <div className="w-24 h-24 bg-gradient-healing rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">Dr</span>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card rounded-xl shadow-healing p-8">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="space-y-6">
+                  <div className="w-32 h-32 bg-gradient-healing rounded-full mx-auto lg:mx-0 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-primary-foreground">Dr. NS</span>
+                  </div>
+                  <div className="text-center lg:text-left">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Dr. Nomaan Siddiqui</h3>
+                    <p className="text-trust-blue font-medium mb-1">B.H.M.S, M.D. Hom</p>
+                    <p className="text-muted-foreground font-medium">Managing Director</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Dr. Nomaan Siddiqui brings over 32 years of personal experience in homeopathic practice, 
+                    blending traditional wisdom with modern medical expertise for superior results. As the 
+                    third generation in his family to practice homeopathy, he maintains the highest standards 
+                    of ethical and scientific care.
+                  </p>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <div className="h-2 w-2 rounded-full bg-success"></div>
+                      <span className="text-sm text-muted-foreground">Life member of IIHP (Indian Institute of Homeopathic Physicians)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-2 w-2 rounded-full bg-success"></div>
+                      <span className="text-sm text-muted-foreground">Treasurer of IIHP Greater Hyderabad</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-2 w-2 rounded-full bg-success"></div>
+                      <span className="text-sm text-muted-foreground">Active participant in major Indian homeopathic events</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-2 w-2 rounded-full bg-success"></div>
+                      <span className="text-sm text-muted-foreground">Contributor to national homeopathy boards</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-muted rounded-lg p-4">
+                    <p className="text-sm text-muted-foreground italic text-center">
+                      "Every prescription is individualized, using time-tested homeopathic protocols 
+                      delivered with empathy and precision."
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Chief Practitioner</h3>
-              <p className="text-trust-blue font-medium mb-4">Mehdipatnam Clinic</p>
-              <p className="text-muted-foreground leading-relaxed">
-                Over 15 years of experience in classical homeopathy with specialization in chronic diseases, 
-                pediatric care, and women's health. Dedicated to providing personalized treatment plans 
-                for each patient's unique needs.
-              </p>
-            </div>
-
-            <div className="bg-card rounded-xl shadow-card p-8 text-center">
-              <div className="w-24 h-24 bg-gradient-trust rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">Dr</span>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">Senior Practitioner</h3>
-              <p className="text-trust-blue font-medium mb-4">Abids Clinic</p>
-              <p className="text-muted-foreground leading-relaxed">
-                Expert in acute and chronic conditions with 12+ years of practice. Known for compassionate 
-                care and detailed case taking. Specializes in respiratory conditions, digestive disorders, 
-                and stress-related ailments.
-              </p>
             </div>
           </div>
         </div>

@@ -76,8 +76,8 @@ const Index = () => {
                   <span className="block text-primary">Homeopathy</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Experience gentle, effective healthcare that treats you as a whole person. 
-                  Trusted by thousands in Hyderabad for over a decade.
+                  Led by Dr. Nomaan Siddiqui, experience gentle, effective healthcare that treats you as a whole person. 
+                  Trusted by thousands in Hyderabad for over 60 years with a legacy of healing excellence.
                 </p>
               </div>
 
@@ -131,6 +131,86 @@ const Index = () => {
                 <p className="text-muted-foreground">{stat.label}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Doctor Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <h2 className="text-4xl font-bold text-foreground">
+                    Meet Dr. Nomaan Siddiqui
+                  </h2>
+                  <p className="text-lg text-primary font-medium">
+                    B.H.M.S, M.D. Hom | Managing Director
+                  </p>
+                </div>
+                
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="leading-relaxed">
+                    Dr. Nomaan Siddiqui continues the 60-year legacy of Reliable Homeo Centre, 
+                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With over 
+                    32 years of personal experience, he combines traditional homeopathic wisdom with 
+                    modern medical expertise.
+                  </p>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
+                      <span>Life member of IIHP (Indian Institute of Homeopathic Physicians)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
+                      <span>Treasurer of IIHP Greater Hyderabad</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
+                      <span>Active participant in major Indian homeopathic events</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
+                      <span>Contributor to national homeopathy boards</span>
+                    </div>
+                  </div>
+                </div>
+
+                <Button variant="trust" size="lg" asChild>
+                  <Link to="/about">Learn More About Our Legacy</Link>
+                </Button>
+              </div>
+
+              <div className="space-y-6">
+                <Card className="shadow-healing">
+                  <CardHeader>
+                    <CardTitle className="text-center text-xl">Our Treatment Philosophy</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-muted-foreground text-center leading-relaxed">
+                      "Every prescription is individualized, using time-tested homeopathic protocols 
+                      delivered with empathy and precision."
+                    </p>
+                    <div className="text-center">
+                      <span className="text-sm text-primary font-medium">- Dr. Nomaan Siddiqui</span>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <div className="text-2xl font-bold text-primary">60+</div>
+                    <div className="text-sm text-muted-foreground">Years of Legacy</div>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <div className="text-2xl font-bold text-primary">32+</div>
+                    <div className="text-sm text-muted-foreground">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
