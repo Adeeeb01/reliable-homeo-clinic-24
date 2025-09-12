@@ -30,7 +30,7 @@ const Index = () => {
 
   const stats = [
     { number: "1000+", label: "Happy Patients" },
-    { number: "10+", label: "Years Experience" },
+    { number: "16+", label: "Years Experience" },
     { number: "2", label: "Convenient Locations" },
     { number: "98%", label: "Success Rate" }
   ];
@@ -141,13 +141,22 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <div className="space-y-4">
-                  <h2 className="text-4xl font-bold text-foreground">
-                    Meet Dr. Nomaan Siddiqui
-                  </h2>
-                  <p className="text-lg text-primary font-medium">
-                    B.H.M.S, M.D. Hom | Managing Director
-                  </p>
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="w-20 h-20 rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                      alt="Dr. Nomaan Siddiqui" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-4xl font-bold text-foreground">
+                      Meet Dr. Nomaan Siddiqui
+                    </h2>
+                    <p className="text-lg text-primary font-medium">
+                      B.H.M.S, M.D. Hom | Managing Director
+                    </p>
+                  </div>
                 </div>
                 
                 <div className="space-y-4 text-muted-foreground">
