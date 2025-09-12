@@ -77,7 +77,7 @@ const Index = () => {
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Led by Dr. Nomaan Siddiqui, experience gentle, effective healthcare that treats you as a whole person. 
-                  Trusted by thousands in Hyderabad for over 60 years with a legacy of healing excellence.
+                  Trusted by thousands in Hyderabad for over 75 years with a legacy of healing excellence.
                 </p>
               </div>
 
@@ -152,10 +152,10 @@ const Index = () => {
                 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Dr. Nomaan Siddiqui continues the 60-year legacy of Reliable Homeo Centre, 
-                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With over 
-                    32 years of personal experience, he combines traditional homeopathic wisdom with 
-                    modern medical expertise.
+                    Dr. Nomaan Siddiqui continues the 75-year legacy of Reliable Homeo Clinics, 
+                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With 11 years 
+                    of clinical practice and 16 years of BHMS experience, he combines traditional 
+                    homeopathic wisdom with modern medical expertise.
                   </p>
                   
                   <div className="space-y-2">
@@ -201,12 +201,12 @@ const Index = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-card rounded-lg">
-                    <div className="text-2xl font-bold text-primary">60+</div>
+                    <div className="text-2xl font-bold text-primary">75+</div>
                     <div className="text-sm text-muted-foreground">Years of Legacy</div>
                   </div>
                   <div className="text-center p-4 bg-card rounded-lg">
-                    <div className="text-2xl font-bold text-primary">32+</div>
-                    <div className="text-sm text-muted-foreground">Years Experience</div>
+                    <div className="text-2xl font-bold text-primary">16+</div>
+                    <div className="text-sm text-muted-foreground">Years BHMS Experience</div>
                   </div>
                 </div>
               </div>

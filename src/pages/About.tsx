@@ -9,7 +9,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-              About Reliable Homeo Centre
+              About Reliable Homeo Clinics
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-slide-up">
               Hyderabad's trusted destination for ethical and scientific homeopathic care since 1949
@@ -26,29 +26,28 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground">Our Heritage</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 1949 by the late Dr. Badreuddin Siddiqui, Reliable Homeo Centre has served 
-                  generations of patients with unwavering commitment to ethical homeopathic practice. 
-                  Our practice upholds a legacy of healing excellence spanning over 60 years, providing 
-                  compassionate and effective treatment for diverse health conditions.
+                  Founded in 1949 by the late Dr. Badreuddin Siddiqui (grandfather of Dr. Nomaan Siddiqui), 
+                  Reliable Homeo Clinics has served generations of patients with unwavering commitment to 
+                  ethical homeopathic practice. For 32 years, Dr. Badreuddin Siddiqui established the 
+                  foundation of excellence in homeopathic care.
                 </p>
                 <p>
-                  Today, Dr. Nomaan Siddiqui (B.H.M.S, M.D. Hom), grandson of the founder, continues 
-                  this remarkable legacy as Managing Director. His dedication to the family tradition 
-                  is supported by notable contributions to national homeopathy boards and active 
-                  community leadership.
+                  Following this legacy, Dr. Nomaan's father continued the family tradition, ensuring 
+                  uninterrupted quality care for the community. Today, Dr. Nomaan Siddiqui (B.H.M.S, M.D. Hom), 
+                  practicing for 11 years and with 16 years of BHMS experience, continues this remarkable 
+                  heritage as Managing Director.
                 </p>
                 <p>
-                  Our heritage, expertise, and patient-first approach ensure every visitor receives 
-                  the highest standard of personalized homeopathic care. We've built our reputation 
-                  on trust, compassion, and most importantly, results that span three generations 
-                  of healing.
+                  Our three-generation legacy, expertise, and patient-first approach ensure every visitor 
+                  receives the highest standard of personalized homeopathic care. We've built our reputation 
+                  on trust, compassion, and most importantly, results that span over 75 years of healing.
                 </p>
               </div>
             </div>
             <div className="relative">
               <img 
-                src={aboutImage} 
-                alt="Natural homeopathy medicine and healing elements" 
+                src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                alt="Dr. Nomaan Siddiqui - Lead Homeopathic Physician at Reliable Homeo Clinics" 
                 className="rounded-xl shadow-healing w-full"
               />
               <div className="absolute inset-0 bg-gradient-healing opacity-10 rounded-xl"></div>
@@ -134,8 +133,12 @@ const About = () => {
             <div className="bg-card rounded-xl shadow-healing p-8">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6">
-                  <div className="w-32 h-32 bg-gradient-healing rounded-full mx-auto lg:mx-0 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-primary-foreground">Dr. NS</span>
+                  <div className="w-32 h-32 rounded-full mx-auto lg:mx-0 overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                      alt="Dr. Nomaan Siddiqui" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="text-center lg:text-left">
                     <h3 className="text-2xl font-bold text-foreground mb-2">Dr. Nomaan Siddiqui</h3>
@@ -146,10 +149,10 @@ const About = () => {
                 
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Dr. Nomaan Siddiqui brings over 32 years of personal experience in homeopathic practice, 
-                    blending traditional wisdom with modern medical expertise for superior results. As the 
-                    third generation in his family to practice homeopathy, he maintains the highest standards 
-                    of ethical and scientific care.
+                    Dr. Nomaan Siddiqui brings 11 years of clinical practice and 16 years of BHMS experience 
+                    in homeopathic care, blending traditional wisdom with modern medical expertise for superior 
+                    results. As the third generation in his family to practice homeopathy, he maintains the 
+                    highest standards of ethical and scientific care.
                   </p>
                   
                   <div className="space-y-2">
@@ -257,6 +260,74 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Patient Reviews */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-6">Patient Reviews</h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Hear what our patients say about their healing journey with us
+            </p>
+            <a 
+              href="https://www.lybrate.com/hyderabad/doctor/dr-nomaan-siddiqui-homeopath"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gradient-healing text-primary-foreground rounded-lg hover:shadow-healing transition-all duration-300"
+            >
+              View All Reviews on Lybrate
+            </a>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-card rounded-xl shadow-healing p-6">
+              <div className="mb-4">
+                <h4 className="font-semibold text-foreground">Prativ</h4>
+                <p className="text-sm text-muted-foreground">Feb 14, 2023</p>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Dr. Nomaan Siddiqui, I am so happy with your dedication and excellence you put up in your treatments. 
+                The efforts and your wonderful advice you give to all the patients. I am very thankful to you. 
+                No amount of thanks can express my feelings. Just keep on doing the good work by the good hands God has."
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl shadow-healing p-6">
+              <div className="mb-4">
+                <h4 className="font-semibold text-foreground">Paramjit</h4>
+                <p className="text-sm text-muted-foreground">Jan 31, 2023</p>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Thank you so much doctor. You did the treatment with full enthusiasm and attention. 
+                Thanks a lot for your treatment. I must say that you are really an expert Dr. Nomaan Siddiqui."
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl shadow-healing p-6">
+              <div className="mb-4">
+                <h4 className="font-semibold text-foreground">Patoj</h4>
+                <p className="text-sm text-muted-foreground">Dec 03, 2022</p>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Dr. Nomaan Siddiqui I really appreciate his efforts he put with his patients and would 
+                highly recommend everybody to get in touch with Dr. Nomaan Siddiqui for any related treatment 
+                for the services the doctor provides."
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl shadow-healing p-6">
+              <div className="mb-4">
+                <h4 className="font-semibold text-foreground">Gurdeep</h4>
+                <p className="text-sm text-muted-foreground">Dec 20, 2022</p>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Dr. Nomaan Siddiqui you are the best Homeopath among all I know. Thank you so very much. 
+                I am completely satisfied with the results I observed."
+              </p>
             </div>
           </div>
         </div>
