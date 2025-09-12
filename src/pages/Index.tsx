@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MessageCircle, MapPin, Clock, Star, Heart, Stethoscope, Shield, Users, CheckCircle } from "lucide-react";
-import heroImage from "@/assets/hero-homeo.jpg";
+
 
 const Index = () => {
   const services = [
@@ -117,20 +117,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Hero Image */}
-            <div className="relative animate-slide-up">
-              <img 
-                src={heroImage} 
-                alt="Natural homeopathy healing with herbal elements and gentle care" 
-                className="rounded-2xl shadow-healing w-full"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-card rounded-xl p-4 shadow-lg border">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">10+</div>
-                  <div className="text-xs text-muted-foreground">Years of Trust</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
