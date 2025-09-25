@@ -1,17 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Calendar } from "lucide-react";
+import { Phone, MapPin, Clock, Calendar, Globe, Video } from "lucide-react";
 
 const BookAppointment = () => {
   const handlePhoneCall = () => {
     window.location.href = "tel:+911234567890";
   };
 
-  const handleWhatsAppMessage = () => {
-    const message = "Hello, I would like to book an appointment at Reliable Homeo Clinics.";
-    const whatsappUrl = `https://wa.me/911234567890?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
-  };
 
   return (
     <div className="min-h-screen">
@@ -69,36 +64,87 @@ const BookAppointment = () => {
                 </CardContent>
               </Card>
 
-              {/* WhatsApp Booking */}
+              {/* Online Consultation for International Patients */}
               <Card className="relative overflow-hidden shadow-healing hover:shadow-lg transition-smooth">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-trust opacity-10 rounded-full -mr-16 -mt-16"></div>
                 <CardHeader className="text-center pb-4">
                   <div className="flex justify-center mb-4">
                     <div className="h-16 w-16 rounded-full bg-gradient-trust flex items-center justify-center">
-                      <MessageCircle className="h-8 w-8 text-white" />
+                      <Globe className="h-8 w-8 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-xl">WhatsApp Message</CardTitle>
+                  <CardTitle className="text-xl">Online Consultation</CardTitle>
                   <CardDescription>
-                    Send us a message on WhatsApp for quick appointment booking
+                    Perfect for international patients - Connect with Dr. Nomaan from anywhere in the world
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
-                  <div className="text-lg font-semibold text-foreground">Quick & Convenient</div>
-                  <Button 
-                    variant="appointment" 
-                    size="lg" 
-                    onClick={handleWhatsAppMessage}
-                    className="w-full"
-                  >
-                    <MessageCircle className="h-5 w-5 mr-2" />
-                    Message on WhatsApp
-                  </Button>
+                  <div className="text-lg font-semibold text-foreground">Global Healthcare Access</div>
                   <p className="text-sm text-muted-foreground">
-                    We'll respond within 30 minutes during business hours
+                    Get expert homeopathic treatment through secure video consultation, regardless of your location
                   </p>
+                  <div className="flex items-center justify-center space-x-2 text-sm text-primary">
+                    <Video className="h-4 w-4" />
+                    <span>Secure Video Consultation</span>
+                  </div>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* Online Consultation Booking Section */}
+            <div className="mb-16">
+              <div className="bg-gradient-healing/5 rounded-2xl p-8 border border-primary/10">
+                <div className="text-center mb-8">
+                  <h3 className="text-3xl font-bold text-foreground mb-4">
+                    Book Your Online Consultation
+                  </h3>
+                  <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                    Experience the same quality care from the comfort of your home. Our online consultations are perfect for international patients, follow-up visits, and those who prefer remote healthcare. Dr. Nomaan provides comprehensive homeopathic treatment through secure video calls.
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="text-center space-y-3">
+                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                      <Globe className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Global Access</h4>
+                    <p className="text-sm text-muted-foreground">Available worldwide with flexible time zones</p>
+                  </div>
+                  
+                  <div className="text-center space-y-3">
+                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                      <Video className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">HD Video Calls</h4>
+                    <p className="text-sm text-muted-foreground">Crystal clear communication for accurate diagnosis</p>
+                  </div>
+                  
+                  <div className="text-center space-y-3">
+                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                      <Clock className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Flexible Scheduling</h4>
+                    <p className="text-sm text-muted-foreground">Book appointments at your convenience</p>
+                  </div>
+                </div>
+
+                {/* Calendly Widget */}
+                <div className="bg-background rounded-xl overflow-hidden shadow-inner">
+                  <div 
+                    className="calendly-inline-widget" 
+                    data-url="https://calendly.com/reliable-homeo8911" 
+                    style={{minWidth: '320px', height: '700px'}}
+                  ></div>
+                </div>
+                
+                <div className="text-center mt-6">
+                  <p className="text-sm text-muted-foreground">
+                    Having trouble with the booking widget? Contact us directly at{" "}
+                    <span className="text-primary font-medium">+91 1234567890</span>
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Clinic Locations */}
@@ -227,6 +273,13 @@ const BookAppointment = () => {
           </div>
         </div>
       </section>
+
+      {/* Calendly Script */}
+      <script 
+        type="text/javascript" 
+        src="https://assets.calendly.com/assets/external/widget.js" 
+        async
+      ></script>
     </div>
   );
 };
