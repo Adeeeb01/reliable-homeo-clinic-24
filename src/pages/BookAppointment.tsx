@@ -1,10 +1,25 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MapPin, Clock, Calendar, Globe, Video } from "lucide-react";
 
 const BookAppointment = () => {
+  const [showCalendly, setShowCalendly] = useState(false);
+
   const handlePhoneCall = () => {
     window.location.href = "tel:+911234567890";
+  };
+
+  const handleBookOnline = () => {
+    setShowCalendly(true);
+    // Load Calendly script if not already loaded
+    if (!document.querySelector('script[src*="calendly"]')) {
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.head.appendChild(script);
+    }
   };
 
 
@@ -83,69 +98,87 @@ const BookAppointment = () => {
                   <p className="text-sm text-muted-foreground">
                     Get expert homeopathic treatment through secure video consultation, regardless of your location
                   </p>
-                  <div className="flex items-center justify-center space-x-2 text-sm text-primary">
+                  <div className="flex items-center justify-center space-x-2 text-sm text-primary mb-4">
                     <Video className="h-4 w-4" />
                     <span>Secure Video Consultation</span>
                   </div>
+                  <Button 
+                    variant="appointment" 
+                    size="lg" 
+                    onClick={handleBookOnline}
+                    className="w-full"
+                  >
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Book Online Consultation
+                  </Button>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Online Consultation Booking Section */}
-            <div className="mb-16">
-              <div className="bg-gradient-healing/5 rounded-2xl p-8 border border-primary/10">
-                <div className="text-center mb-8">
-                  <h3 className="text-3xl font-bold text-foreground mb-4">
-                    Book Your Online Consultation
-                  </h3>
-                  <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                    Experience the same quality care from the comfort of your home. Our online consultations are perfect for international patients, follow-up visits, and those who prefer remote healthcare. Dr. Nomaan provides comprehensive homeopathic treatment through secure video calls.
-                  </p>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="text-center space-y-3">
-                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
-                      <Globe className="h-6 w-6 text-primary-foreground" />
-                    </div>
-                    <h4 className="font-semibold text-foreground">Global Access</h4>
-                    <p className="text-sm text-muted-foreground">Available worldwide with flexible time zones</p>
+            {/* Online Consultation Booking Section - Conditional */}
+            {showCalendly && (
+              <div className="mb-16">
+                <div className="bg-gradient-healing/5 rounded-2xl p-8 border border-primary/10">
+                  <div className="text-center mb-8">
+                    <h3 className="text-3xl font-bold text-foreground mb-4">
+                      Book Your Online Consultation
+                    </h3>
+                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                      Experience the same quality care from the comfort of your home. Our online consultations are perfect for international patients, follow-up visits, and those who prefer remote healthcare. Dr. Nomaan provides comprehensive homeopathic treatment through secure video calls.
+                    </p>
                   </div>
                   
-                  <div className="text-center space-y-3">
-                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
-                      <Video className="h-6 w-6 text-primary-foreground" />
+                  <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    <div className="text-center space-y-3">
+                      <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                        <Globe className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <h4 className="font-semibold text-foreground">Global Access</h4>
+                      <p className="text-sm text-muted-foreground">Available worldwide with flexible time zones</p>
                     </div>
-                    <h4 className="font-semibold text-foreground">HD Video Calls</h4>
-                    <p className="text-sm text-muted-foreground">Crystal clear communication for accurate diagnosis</p>
-                  </div>
-                  
-                  <div className="text-center space-y-3">
-                    <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
-                      <Clock className="h-6 w-6 text-primary-foreground" />
+                    
+                    <div className="text-center space-y-3">
+                      <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                        <Video className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <h4 className="font-semibold text-foreground">HD Video Calls</h4>
+                      <p className="text-sm text-muted-foreground">Crystal clear communication for accurate diagnosis</p>
                     </div>
-                    <h4 className="font-semibold text-foreground">Flexible Scheduling</h4>
-                    <p className="text-sm text-muted-foreground">Book appointments at your convenience</p>
+                    
+                    <div className="text-center space-y-3">
+                      <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center mx-auto">
+                        <Clock className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <h4 className="font-semibold text-foreground">Flexible Scheduling</h4>
+                      <p className="text-sm text-muted-foreground">Book appointments at your convenience</p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Calendly Widget */}
-                <div className="bg-background rounded-xl overflow-hidden shadow-inner">
-                  <div 
-                    className="calendly-inline-widget" 
-                    data-url="https://calendly.com/reliable-homeo8911" 
-                    style={{minWidth: '320px', height: '700px'}}
-                  ></div>
-                </div>
-                
-                <div className="text-center mt-6">
-                  <p className="text-sm text-muted-foreground">
-                    Having trouble with the booking widget? Contact us directly at{" "}
-                    <span className="text-primary font-medium">+91 1234567890</span>
-                  </p>
+                  {/* Calendly Widget */}
+                  <div className="bg-background rounded-xl overflow-hidden shadow-inner">
+                    <div 
+                      className="calendly-inline-widget" 
+                      data-url="https://calendly.com/reliable-homeo8911" 
+                      style={{minWidth: '320px', height: '700px'}}
+                    ></div>
+                  </div>
+                  
+                  <div className="text-center mt-6">
+                    <p className="text-sm text-muted-foreground">
+                      Having trouble with the booking widget? Contact us directly at{" "}
+                      <span className="text-primary font-medium">+91 1234567890</span>
+                    </p>
+                    <Button 
+                      variant="outline" 
+                      onClick={() => setShowCalendly(false)}
+                      className="mt-4"
+                    >
+                      Close Booking Widget
+                    </Button>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             {/* Clinic Locations */}
             <h3 className="text-2xl font-bold text-foreground text-center mb-8">
@@ -273,13 +306,6 @@ const BookAppointment = () => {
           </div>
         </div>
       </section>
-
-      {/* Calendly Script */}
-      <script 
-        type="text/javascript" 
-        src="https://assets.calendly.com/assets/external/widget.js" 
-        async
-      ></script>
     </div>
   );
 };
