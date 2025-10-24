@@ -2,9 +2,62 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MessageCircle, MapPin, Clock, Star, Heart, Stethoscope, Shield, Users, CheckCircle } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import achievement1 from "@/assets/achievement-1.jpg";
+import achievement2 from "@/assets/achievement-2.jpg";
+import achievement3 from "@/assets/achievement-3.jpg";
+import achievement4 from "@/assets/achievement-4.jpg";
+import achievement5 from "@/assets/achievement-5.jpg";
+import achievement6 from "@/assets/achievement-6.jpg";
+import achievement7 from "@/assets/achievement-7.jpg";
 
 
 const Index = () => {
+  const achievements = [
+    {
+      image: achievement1,
+      title: "Homeopathy Conference Award",
+      description: "Recognition ceremony at the national homeopathy convention for excellence in practice and patient care"
+    },
+    {
+      image: achievement2,
+      title: "Hospital Partnership Certificate",
+      description: "Certificate of appreciation for collaboration with Aster Prime Hospital in integrative healthcare services"
+    },
+    {
+      image: achievement3,
+      title: "Dr. Baderuddin Siddiqui Memorial Quiz Master",
+      description: "Honored to conduct the prestigious memorial homeopathy medical quiz competition"
+    },
+    {
+      image: achievement4,
+      title: "International Certification",
+      description: "International recognition for advanced training and expertise in homeopathic medicine"
+    },
+    {
+      image: achievement5,
+      title: "Telangana State Homeopathic Convention",
+      description: "Felicitated at the 5th Telangana State Homeopathic Convention & Scientific Session"
+    },
+    {
+      image: achievement6,
+      title: "Professional Excellence Award",
+      description: "Award for outstanding contribution to homeopathic medicine and community healthcare"
+    },
+    {
+      image: achievement7,
+      title: "Advanced Training Certificate",
+      description: "Certificate for completing advanced homeopathy training from international faculty"
+    }
+  ];
+
   const services = [
     {
       title: "Chronic Disease Management",
@@ -131,6 +184,65 @@ const Index = () => {
                 <p className="text-muted-foreground">{stat.label}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-foreground mb-6">
+                Awards & Recognition
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Celebrating excellence in homeopathic medicine and patient care
+              </p>
+            </div>
+
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                })
+              ]}
+              className="w-full max-w-5xl mx-auto"
+            >
+              <CarouselContent>
+                {achievements.map((achievement, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                      <Card className="shadow-healing overflow-hidden">
+                        <div className="aspect-[4/3] overflow-hidden">
+                          <img 
+                            src={achievement.image} 
+                            alt={achievement.title}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <CardHeader>
+                          <CardTitle className="text-lg text-center">
+                            {achievement.title}
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-sm text-muted-foreground text-center leading-relaxed">
+                            {achievement.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>

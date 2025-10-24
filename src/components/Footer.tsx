@@ -94,12 +94,6 @@ const Footer = () => {
               >
                 Health Tips
               </Link>
-              <Link
-                to="/insurance"
-                className="block text-sm text-muted-foreground hover:text-primary transition-smooth"
-              >
-                Insurance & Payments
-              </Link>
             </nav>
           </div>
         </div>
