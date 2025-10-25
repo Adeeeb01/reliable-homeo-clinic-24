@@ -423,7 +423,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Appointment is on walk-in basis</span>
                   </div>
 
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full" onClick={()=>window.open("https://maps.app.goo.gl/ZkiCS6Cbgb4g7qqSA")}>
                     <MapPin className="h-4 w-4 mr-2" />
                     View on Maps
                   </Button>
@@ -457,7 +457,7 @@ const Index = () => {
                   </div>
                   
 
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full" onClick={()=>window.open("https://maps.app.goo.gl/x4ZpyjXGcnxCdyuY8")}>
                     <MapPin className="h-4 w-4 mr-2" />
                     View on Maps
                   </Button>
