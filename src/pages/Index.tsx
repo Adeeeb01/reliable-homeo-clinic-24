@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Star, Heart, Stethoscope, Shield, Users, CheckCircle } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock, Star, Heart, Stethoscope, Shield, Users, CheckCircle, PhoneCall } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -83,9 +83,8 @@ const Index = () => {
 
   const stats = [
     { number: "1000+", label: "Happy Patients" },
-    { number: "16+", label: "Years Experience" },
+    { number: "15+", label: "Years Experience" },
     { number: "2", label: "Convenient Locations" },
-    { number: "98%", label: "Success Rate" }
   ];
 
   const testimonials = [
@@ -177,7 +176,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index} className="space-y-2">
                 <div className="text-4xl font-bold text-primary">{stat.number}</div>
@@ -266,7 +265,7 @@ const Index = () => {
                       Meet Dr. Nomaan Siddiqui
                     </h2>
                     <p className="text-lg text-primary font-medium">
-                      B.H.M.S, M.D. Hom | Managing Director
+                      B.H.M.S, M.D. (Homeopathy) | Managing Director Reliable Clinics
                     </p>
                   </div>
                 </div>
@@ -274,19 +273,23 @@ const Index = () => {
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
                     Dr. Nomaan Siddiqui continues the 75-year legacy of Reliable Homeo Clinics, 
-                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With 11 years 
-                    of clinical practice and 16 years of BHMS experience, he combines traditional 
+                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With 15 years 
+                    of clinical practice, he combines traditional 
                     homeopathic wisdom with modern medical expertise.
                   </p>
                   
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
-                      <span>Life member of IIHP (Indian Institute of Homeopathic Physicians)</span>
+                      <span>Treasurer of IIHP (Indian Institute of Homeopathic Physicians)</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
-                      <span>Treasurer of IIHP Greater Hyderabad</span>
+                      <span>Life member of IIHP (Greater Hyderabad)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
+                      <span>Integrated Oncology training - Dornach, Switzerland</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
@@ -326,7 +329,7 @@ const Index = () => {
                     <div className="text-sm text-muted-foreground">Years of Legacy</div>
                   </div>
                   <div className="text-center p-4 bg-card rounded-lg">
-                    <div className="text-2xl font-bold text-primary">16+</div>
+                    <div className="text-2xl font-bold text-primary">15+</div>
                     <div className="text-sm text-muted-foreground">Years BHMS Experience</div>
                   </div>
                 </div>
@@ -386,33 +389,6 @@ const Index = () => {
             </h2>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              {/* Mehdipatnam Clinic */}
-              <Card className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-3">
-                    <MapPin className="h-6 w-6 text-primary" />
-                    <span>Mehdipatnam Clinic</span>
-                  </CardTitle>
-                  <CardDescription>Our main clinic location</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    #13-6-437/B/2, Khadar Bagh, Nanal Nagar<br />
-                    (Near Quba Masjid & Premier Hospital)
-                  </p>
-                  
-                  <div className="flex items-center space-x-2 text-sm">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">Mon-Sat: 9 AM - 7 PM</span>
-                  </div>
-
-                  <Button variant="outline" className="w-full">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    View on Maps
-                  </Button>
-                </CardContent>
-              </Card>
-
               {/* Abids Clinic */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -424,14 +400,62 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    4-1-414, Opposite City Centre,<br />
-                    Bank Street, Sagar Plaza
+                    4-1-414, Sagar Plaza, Opposite Sachin Sports,<br/> Abids road, Bank Street.
                   </p>
                   
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">Mon-Sat: 10 AM - 8 PM</span>
+                    <span className="text-muted-foreground">Monday to Thursday & Saturday: 11:30 AM - 2:30 PM</span>
                   </div>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <span className="text-muted-foreground">Monday, Wednesday & Saturday: 6 AM - 9 PM</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <span className="text-muted-foreground">Sunday: 1 AM - 3 PM</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <span className="text-muted-foreground">Contact: +91 77803 96837</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <span className="text-muted-foreground">Appointment is on walk-in basis</span>
+                  </div>
+
+                  <Button variant="outline" className="w-full">
+                    <MapPin className="h-4 w-4 mr-2" />
+                    View on Maps
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Mehdipatnam Clinic */}
+              <Card className="shadow-card">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3">
+                    <MapPin className="h-6 w-6 text-primary" />
+                    <span>Mehdipatnam Clinic</span>
+                  </CardTitle>
+                  <CardDescription>Our main clinic location</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    #13-6-437/B/2, Khadar Bagh, Nanal Nagar, opposite humanity hospital.<br />
+                    (Near Quba Masjid & Premier Hospital)
+                  </p>
+                  
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <span className="text-muted-foreground">Tuesday & Thursday only: 5 PM - 8 PM</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <span className="text-muted-foreground">Please book your appointment beforehand @ +91 86869 04404</span>
+                  </div> 
+                  <div className="flex items-center space-x-2 text-sm">
+                    <span className="text-muted-foreground">Appointment booking timings: 11 AM to 1 PM</span>
+                  </div>
+                  
 
                   <Button variant="outline" className="w-full">
                     <MapPin className="h-4 w-4 mr-2" />

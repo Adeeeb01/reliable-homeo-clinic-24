@@ -26,15 +26,15 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground">Our Heritage</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 1949 by the late Dr. Badreuddin Siddiqui (grandfather of Dr. Nomaan Siddiqui), 
+                  Founded in 1955 by the late Dr. Badreuddin Siddiqui (grandfather of Dr. Nomaan Siddiqui), 
                   Reliable Homeo Clinics has served generations of patients with unwavering commitment to 
                   ethical homeopathic practice. For 32 years, Dr. Badreuddin Siddiqui established the 
                   foundation of excellence in homeopathic care.
                 </p>
                 <p>
-                  Following this legacy, Dr. Nomaan's father continued the family tradition, ensuring 
+                  Following this legacy, Dr. Aqeel Siddiqui (Dr. Nomaan’s father continued the family tradition from 1981 to 2021, ensuring 
                   uninterrupted quality care for the community. Today, Dr. Nomaan Siddiqui (B.H.M.S, M.D. Hom), 
-                  practicing for 11 years and with 16 years of BHMS experience, continues this remarkable 
+                  practicing for 15+ years of Homeopathic clinical experience, continues this remarkable 
                   heritage as Managing Director.
                 </p>
                 <p>
@@ -149,28 +149,28 @@ const About = () => {
                 
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Dr. Nomaan Siddiqui brings 11 years of clinical practice and 16 years of BHMS experience 
+                    Dr. Nomaan Siddiqui brings 15+ years of BHMS experience 
                     in homeopathic care, blending traditional wisdom with modern medical expertise for superior 
                     results. As the third generation in his family to practice homeopathy, he maintains the 
                     highest standards of ethical and scientific care.
                   </p>
                   
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-2">
                       <div className="h-2 w-2 rounded-full bg-success"></div>
-                      <span className="text-sm text-muted-foreground">Life member of IIHP (Indian Institute of Homeopathic Physicians)</span>
+                      <span className="text-sm text-muted-foreground">Treasurer of IIHP (Indian Institute of Homeopathic Physicians)</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="h-2 w-2 rounded-full bg-success"></div>
-                      <span className="text-sm text-muted-foreground">Treasurer of IIHP Greater Hyderabad</span>
+                      <span className="text-sm text-muted-foreground">Life member of IIHP ((Greater Hyderabad))</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-2 w-2 rounded-full bg-success"></div>
+                      <span className="text-sm text-muted-foreground">Post Graduate from Hahnemann College of Homeopathy, London, United Kingdom</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="h-2 w-2 rounded-full bg-success"></div>
                       <span className="text-sm text-muted-foreground">Active participant in major Indian homeopathic events</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-2 w-2 rounded-full bg-success"></div>
-                      <span className="text-sm text-muted-foreground">Contributor to national homeopathy boards</span>
                     </div>
                   </div>
                   

@@ -32,10 +32,6 @@ const FAQ = () => {
       icon: <MessageCircle className="h-6 w-6" />,
       questions: [
         {
-          q: "What should I expect during my first consultation?",
-          a: "Your first consultation will be comprehensive, lasting 60-90 minutes. The doctor will take detailed case history including your current symptoms, past medical history, lifestyle, emotions, and general health. This helps in selecting the most appropriate remedy for you."
-        },
-        {
           q: "How do I book an appointment?",
           a: "You can book an appointment by calling us at +91 1234567890 or sending a WhatsApp message. We offer appointments at both our Mehdipatnam and Abids locations. Our staff will help you choose the most convenient time and location."
         },
@@ -43,10 +39,6 @@ const FAQ = () => {
           q: "What should I bring to my appointment?",
           a: "Please bring any recent medical reports, test results, and a list of current medications. It's also helpful to note down your symptoms and when they occur. This information helps us provide the best possible treatment plan."
         },
-        {
-          q: "How often will I need follow-up appointments?",
-          a: "Follow-up appointments are typically scheduled every 4-6 weeks initially, then extended as you improve. The frequency depends on your condition and response to treatment. Most patients need 4-8 follow-ups for chronic conditions."
-        }
       ]
     },
     {
@@ -71,28 +63,6 @@ const FAQ = () => {
         }
       ]
     },
-    {
-      title: "Practical Information",
-      icon: <Phone className="h-6 w-6" />,
-      questions: [
-        {
-          q: "What are your clinic timings?",
-          a: "Mehdipatnam Clinic: Monday to Saturday, 9:00 AM - 7:00 PM. Abids Clinic: Monday to Saturday, 10:00 AM - 8:00 PM. Both clinics are closed on Sundays. We also accommodate emergency consultations when possible."
-        },
-        {
-          q: "Do you accept insurance?",
-          a: "We accept various insurance plans and provide detailed receipts for reimbursement. Our treatments are also very affordable compared to long-term conventional treatments. Please contact us to verify your specific insurance coverage."
-        },
-        {
-          q: "How much does treatment cost?",
-          a: "Our consultation fees are very reasonable, and medicine costs are minimal. The total treatment cost is often much lower than conventional treatments because homeopathy addresses root causes, reducing the need for ongoing medication. We believe in transparent, affordable pricing."
-        },
-        {
-          q: "Do you provide online consultations?",
-          a: "While we prefer in-person consultations for the best assessment, we do provide online follow-up consultations for existing patients. For new patients, we recommend visiting one of our clinics for a comprehensive initial evaluation."
-        }
-      ]
-    }
   ];
 
   return (
@@ -183,7 +153,7 @@ const FAQ = () => {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-16 bg-muted">
+      {/* <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-foreground mb-6">
@@ -234,7 +204,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Resources */}
       <section className="py-16">

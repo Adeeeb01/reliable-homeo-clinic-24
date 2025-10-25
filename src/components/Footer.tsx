@@ -36,13 +36,14 @@ const Footer = () => {
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <span className="leading-relaxed">
                   #13-6-437/B/2, Khadar Bagh,<br />
-                  Nanal Nagar<br />
+                  Nanal Nagar
+                  <br />
                   (Near Quba Masjid & Premier Hospital)
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 flex-shrink-0" />
-                <span>Mon-Sat: 9 AM - 7 PM</span>
+                <span>Tuesday & Thursday Only: 5 PM - 8 PM</span>
               </div>
             </div>
           </div>
@@ -54,13 +55,20 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <span className="leading-relaxed">
-                  4-1-414, Opposite City Centre,<br />
-                  Bank Street, Sagar Plaza
+                  4-1-414, Sagar Plaza, <br/>Opposite Sachin Sports,<br/>Abids road, Bank Street.
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 flex-shrink-0" />
-                <span>Mon-Sat: 10 AM - 8 PM</span>
+                <span>Mon - Thu & Saturday: 11:30 AM - 2:30 PM</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 flex-shrink-0" />
+                <span>Mon, Wed & Saturday: 6 PM - 9 PM</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 flex-shrink-0" />
+                <span>Sunday: 1 PM to 3 PM</span>
               </div>
             </div>
           </div>
