@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.jpg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +24,13 @@ const Navigation = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-3 transition-smooth hover:opacity-80">
-          <img src={logo} alt="Reliable Homeo Centre" className="h-12 w-12 object-contain" />
-          <div className="flex flex-col leading-tight">
-            <span className="text-xl font-black tracking-wide" style={{ color: '#DC2626' }}>RELIABLE</span>
-            <span className="text-sm font-medium tracking-wider" style={{ color: '#6B7280' }}>HOMOEO CENTRE</span>
+        <Link to="/" className="flex items-center space-x-2 transition-smooth hover:opacity-80">
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-healing">
+            <Heart className="h-5 w-5 text-primary-foreground" />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-bold text-primary">Reliable Homeo</span>
+            <span className="text-xs text-muted-foreground">Clinics</span>
           </div>
         </Link>
 
