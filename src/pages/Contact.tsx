@@ -40,11 +40,11 @@ const Contact = () => {
                   <CardDescription>Speak directly with our team</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold text-primary mb-4">+91 1234567890</p>
+                  <p className="text-lg font-semibold text-primary mb-4">+91 77803 96837</p>
                   <Button 
                     variant="healing" 
                     className="w-full"
-                    onClick={() => window.location.href = "tel:+911234567890"}
+                    onClick={() => window.location.href = "tel:+917780396837"}
                   >
                     <Phone className="h-4 w-4 mr-2" />
                     Call Now
@@ -69,7 +69,7 @@ const Contact = () => {
                     className="w-full"
                     onClick={() => {
                       const message = "Hello, I have a question about your homeopathy services.";
-                      window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                      window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                     }}
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
@@ -89,11 +89,11 @@ const Contact = () => {
                   <CardDescription>Send us detailed queries</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-primary mb-4">info@reliablehomeo.com</p>
+                  <p className="text-sm text-primary mb-4">reliable.homeo8911@gmail.com</p>
                   <Button 
                     variant="calm" 
                     className="w-full"
-                    onClick={() => window.location.href = "mailto:info@reliablehomeo.com"}
+                    onClick={() => window.location.href = "mailto:reliable.homeo8911@gmail.com"}
                   >
                     <Mail className="h-4 w-4 mr-2" />
                     Send Email
@@ -131,10 +131,10 @@ const Contact = () => {
                     </div>
 
                     <div className="flex items-center space-x-3">
-                      <Clock className="h-5 w-5 text-primary flex-shrink-0" />
+                      <Clock className="h-5 w-5 text-primary flex self-start flex-shrink-0" />
                       <div>
                         <p className="font-medium text-foreground">Working Hours</p>
-                        <p className="text-sm text-muted-foreground">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        <p className="text-sm text-muted-foreground">Tuesday & Thursday only: 5 PM - 8 PM</p>
                         <p className="text-sm text-muted-foreground">Sunday: Closed</p>
                       </div>
                     </div>
@@ -143,12 +143,11 @@ const Contact = () => {
                       <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="font-medium text-foreground">Direct Contact</p>
-                        <p className="text-sm text-muted-foreground">+91 1234567890</p>
+                        <p className="text-sm text-muted-foreground">+91 86869 04404</p>
                       </div>
                     </div>
                   </div>
-
-                  <div className="pt-4 space-y-3">
+                  <div className="pt-9 space-y-3">
                     <Button 
                       variant="outline" 
                       className="w-full"
@@ -162,7 +161,7 @@ const Contact = () => {
                       className="w-full"
                       onClick={() => {
                         const message = "Hello, I would like to visit the Mehdipatnam clinic.";
-                        window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                        window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                       }}
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />
@@ -188,18 +187,18 @@ const Contact = () => {
                       <div>
                         <p className="font-medium text-foreground">Address</p>
                         <p className="text-sm text-muted-foreground">
-                          4-1-414, Opposite City Centre,<br />
-                          Bank Street, Sagar Plaza
+                          4-1-414, Sagar Plaza, Opposite Sachin Sports,<br/> Abids road, Bank Street.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center space-x-3">
-                      <Clock className="h-5 w-5 text-primary flex-shrink-0" />
+                      <Clock className="h-5 w-5 text-primary flex self-start flex-shrink-0" />
                       <div>
                         <p className="font-medium text-foreground">Working Hours</p>
-                        <p className="text-sm text-muted-foreground">Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                        <p className="text-sm text-muted-foreground">Sunday: Closed</p>
+                        <p className="text-sm text-muted-foreground">Monday to Thursday & Saturday: 11:30 AM - 2:30 PM</p>
+                        <p className="text-sm text-muted-foreground">Monday, Wednesday & Saturday: 6 AM - 9 PM</p>
+                        <p className="text-sm text-muted-foreground">Sunday: 1 PM - 3 PM</p>
                       </div>
                     </div>
 
@@ -207,7 +206,7 @@ const Contact = () => {
                       <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="font-medium text-foreground">Direct Contact</p>
-                        <p className="text-sm text-muted-foreground">+91 1234567890</p>
+                        <p className="text-sm text-muted-foreground">+91 77803 96837</p>
                       </div>
                     </div>
                   </div>
@@ -226,7 +225,7 @@ const Contact = () => {
                       className="w-full"
                       onClick={() => {
                         const message = "Hello, I would like to visit the Abids clinic.";
-                        window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                        window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                       }}
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />

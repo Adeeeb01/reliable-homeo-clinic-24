@@ -82,17 +82,17 @@ const Testimonials = () => {
       {/* Statistics */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center mb-16">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-center mb-16">
             <div className="space-y-2">
               <div className="text-4xl font-bold text-primary">1000+</div>
               <p className="text-muted-foreground">Happy Patients</p>
             </div>
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <div className="text-4xl font-bold text-primary">98%</div>
               <p className="text-muted-foreground">Success Rate</p>
-            </div>
+            </div> */}
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">10+</div>
+              <div className="text-4xl font-bold text-primary">15+</div>
               <p className="text-muted-foreground">Years of Experience</p>
             </div>
           </div>
@@ -193,7 +193,7 @@ const Testimonials = () => {
               <Button 
                 variant="healing" 
                 size="lg"
-                onClick={() => window.location.href = "tel:+911234567890"}
+                onClick={() => window.location.href = "tel:+917780396837"}
               >
                 <MessageCircle className="h-5 w-5 mr-2" />
                 Book Your Consultation
@@ -204,7 +204,7 @@ const Testimonials = () => {
                 size="lg"
                 onClick={() => {
                   const message = "Hello, I read your testimonials and would like to know more about homeopathy treatment.";
-                  window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                  window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >
                 Ask Questions on WhatsApp
@@ -231,7 +231,7 @@ const Testimonials = () => {
                 variant="trust" 
                 onClick={() => {
                   const message = "Hello, I would like to share my experience as a patient at Reliable Homeo Clinics.";
-                  window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                  window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >
                 Share Your Story

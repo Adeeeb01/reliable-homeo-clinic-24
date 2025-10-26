@@ -33,7 +33,7 @@ const FAQ = () => {
       questions: [
         {
           q: "How do I book an appointment?",
-          a: "You can book an appointment by calling us at +91 1234567890 or sending a WhatsApp message. We offer appointments at both our Mehdipatnam and Abids locations. Our staff will help you choose the most convenient time and location."
+          a: "You can book an appointment by calling us at +91 86869 04404 or +91 77803 96837 or sending a WhatsApp message. We offer appointments at both our Mehdipatnam and Abids locations. Our staff will help you choose the most convenient time and location."
         },
         {
           q: "What should I bring to my appointment?",
@@ -91,16 +91,16 @@ const FAQ = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 variant="healing" 
-                onClick={() => window.location.href = "tel:+911234567890"}
+                onClick={() => window.location.href = "tel:+917780396837"}
               >
                 <Phone className="h-4 w-4 mr-2" />
-                Call Us: +91 1234567890
+                Call Us: +91 77803 96837
               </Button>
               <Button 
                 variant="appointment" 
                 onClick={() => {
                   const message = "Hello, I have a question about homeopathy treatment at Reliable Homeo Clinics.";
-                  window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                  window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >
                 <MessageCircle className="h-4 w-4 mr-2" />
@@ -193,7 +193,7 @@ const FAQ = () => {
                     className="w-full"
                     onClick={() => {
                       const message = "Hello, I have some questions about homeopathy treatment that aren't covered in the FAQ.";
-                      window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                      window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                     }}
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />

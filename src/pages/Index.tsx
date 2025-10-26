@@ -145,7 +145,7 @@ const Index = () => {
                   size="xl"
                   onClick={() => {
                     const message = "Hello, I would like to know more about homeopathy treatment at Reliable Homeo Clinics.";
-                    window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                    window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                   }}
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
@@ -314,8 +314,9 @@ const Index = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-muted-foreground text-center leading-relaxed">
-                      "Every prescription is individualized, using time-tested homeopathic protocols 
-                      delivered with empathy and precision."
+                      {/* "Every prescription is individualized, using time-tested homeopathic protocols 
+                      delivered with empathy and precision." */}
+                      "I treat, He cures."
                     </p>
                     <div className="text-center">
                       <span className="text-sm text-primary font-medium">- Dr. Nomaan Siddiqui</span>
@@ -413,7 +414,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">Sunday: 1 AM - 3 PM</span>
+                    <span className="text-muted-foreground">Sunday: 1 PM - 3 PM</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Phone className="h-4 w-4 text-primary" />
@@ -423,7 +424,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Appointment is on walk-in basis</span>
                   </div>
 
-                  <Button variant="outline" className="w-full" onClick={()=>window.open("https://maps.app.goo.gl/ZkiCS6Cbgb4g7qqSA")}>
+                  <Button variant="outline" className="w-full" onClick={()=>window.open("https://maps.app.goo.gl/F9Nb8nv8zjj7QCmf7")}>
                     <MapPin className="h-4 w-4 mr-2" />
                     View on Maps
                   </Button>
@@ -450,7 +451,7 @@ const Index = () => {
                     <span className="text-muted-foreground">Tuesday & Thursday only: 5 PM - 8 PM</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
-                    <span className="text-muted-foreground">Please book your appointment beforehand @ +91 86869 04404</span>
+                    <span className="text-muted-foreground">Contact: +91 86869 04404</span>
                   </div> 
                   <div className="flex items-center space-x-2 text-sm">
                     <span className="text-muted-foreground">Appointment booking timings: 11 AM to 1 PM</span>
@@ -531,10 +532,10 @@ const Index = () => {
               <Button 
                 variant="secondary" 
                 size="xl"
-                onClick={() => window.location.href = "tel:+911234567890"}
+                onClick={() => window.location.href = "tel:+917780396837"}
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call: +91 1234567890
+                Call: +91 77803 96837
               </Button>
               
               <Button 

@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 transition-smooth hover:opacity-80">
           <img src={logo} alt="Reliable Homeo Centre" className="h-12 w-12 object-contain" />
@@ -52,14 +52,23 @@ const Navigation = () => {
         </nav>
 
         {/* CTA & Mobile Menu */}
-        <div className="flex items-center space-x-3">
-          <a
-            href="tel:+911234567890"
-            className="hidden sm:flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-smooth"
-          >
-            <Phone className="h-4 w-4" />
-            <span>+91 1234567890</span>
-          </a>
+        <div className="flex items-center gap-3 space-x-3">
+          <div className="">
+            <a
+              href="tel:+918686904404"
+              className="hidden sm:flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              <Phone className="h-4 w-4" />
+              <span>+91 86869 04404</span>
+            </a>
+            <a
+              href="tel:+917780396837"
+              className="hidden sm:flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-smooth"
+            >
+              <Phone className="h-4 w-4" />
+              <span>+91 77803 96837</span>
+            </a>
+          </div>
           
           <Button 
             variant="appointment" 
@@ -104,11 +113,18 @@ const Navigation = () => {
             ))}
             <div className="pt-2 border-t border-border">
               <a
-                href="tel:+911234567890"
+                href="tel:+918686904404"
                 className="flex items-center space-x-2 px-3 py-2 text-sm text-muted-foreground"
               >
                 <Phone className="h-4 w-4" />
-                <span>Call: +91 1234567890</span>
+                <span>Call: +91 86869 04404</span>
+              </a>
+              <a
+                href="tel:+917780396837"
+                className="flex items-center space-x-2 px-3 py-2 text-sm text-muted-foreground"
+              >
+                <Phone className="h-4 w-4" />
+                <span>Call: +91 77803 96837</span>
               </a>
             </div>
           </nav>

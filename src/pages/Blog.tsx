@@ -255,7 +255,7 @@ const Blog = () => {
                   variant="healing"
                   onClick={() => {
                     const message = "Hello, I would like to subscribe to your health newsletter and tips.";
-                    window.open(`https://wa.me/911234567890?text=${encodeURIComponent(message)}`, "_blank");
+                    window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                   }}
                 >
                   Subscribe via WhatsApp

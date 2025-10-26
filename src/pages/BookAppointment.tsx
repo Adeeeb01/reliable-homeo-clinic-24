@@ -5,7 +5,7 @@ import { Phone, MapPin, Clock, Calendar, Globe, Video } from "lucide-react";
 
 const BookAppointment = () => {
   const handlePhoneCall = () => {
-    window.location.href = "tel:+911234567890";
+    window.location.href = "tel:+918686904404";
   };
 
   const handleBookOnline = () => {
@@ -53,7 +53,7 @@ const BookAppointment = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center space-y-4">
-                  <div className="text-2xl font-bold text-primary">+91 1234567890</div>
+                  <div className="text-2xl font-bold text-primary">+91 86869 04404</div>
                   <Button 
                     variant="healing" 
                     size="lg" 
@@ -64,7 +64,7 @@ const BookAppointment = () => {
                     Call Now
                   </Button>
                   <p className="text-sm text-muted-foreground">
-                    Available Mon-Sat, 9 AM - 8 PM
+                    Available Tuesday & Thursday, 11 AM - 1 PM
                   </p>
                 </CardContent>
               </Card>
@@ -131,18 +131,18 @@ const BookAppointment = () => {
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
                     <span className="font-medium">Timings:</span>
-                    <span className="text-muted-foreground">Mon-Sat: 9 AM - 7 PM</span>
+                    <span className="text-muted-foreground">Tue, Thu: 5 PM - 8 PM</span>
                   </div>
 
                   <div className="flex items-center space-x-2 text-sm">
                     <Calendar className="h-4 w-4 text-primary" />
                     <span className="font-medium">Available:</span>
-                    <span className="text-success">Monday to Saturday</span>
+                    <span className="text-success">Tuesday and Thursday</span>
                   </div>
 
                   <Button 
                     variant="outline" 
-                    className="w-full mt-4"
+                    className="w-full mt-4 place-content-end"
                     onClick={() => window.open("https://maps.google.com/?q=Mehdipatnam+Reliable+Homeo+Clinic", "_blank")}
                   >
                     <MapPin className="h-4 w-4 mr-2" />
@@ -162,15 +162,20 @@ const BookAppointment = () => {
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      4-1-414, Opposite City Centre,<br />
-                      Bank Street, Sagar Plaza
+                        4-1-414, Sagar Plaza, Opposite Sachin Sports, <br />
+                        Abids road, Bank Street.
                     </p>
                   </div>
                   
-                  <div className="flex items-center space-x-2 text-sm">
+                  <div className="flex items-start space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
                     <span className="font-medium">Timings:</span>
-                    <span className="text-muted-foreground">Mon-Sat: 10 AM - 8 PM</span>
+                    <div className="flex flex-col">
+                      <span className="text-muted-foreground">Mon-Thu & Sat: 11:30 AM - 2:30 PM</span>
+                      <span className="text-muted-foreground">Mon, Wed, Sat: 6 AM - 9 PM</span>
+                      <span className="text-muted-foreground">Sun: 1 PM - 3 PM</span>
+
+                    </div>
                   </div>
 
                   <div className="flex items-center space-x-2 text-sm">

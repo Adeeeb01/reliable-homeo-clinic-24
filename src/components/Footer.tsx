@@ -20,11 +20,19 @@ const Footer = () => {
               Providing gentle, natural, and effective homeopathy care to the people of Hyderabad. 
               Your trusted partner in holistic healing.
             </p>
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Phone className="h-4 w-4" />
-              <a href="tel:+911234567890" className="hover:text-primary transition-smooth">
-                +91 1234567890
-              </a>
+            <div className="flex flex-col items-start gap-4 text-sm text-muted-foreground">
+              <div className="flex gap-1 items-center">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+918686904404" className="hover:text-primary transition-smooth">
+                  +91 86869 04404 (Mehdipatnam Branch)
+                </a>
+              </div>
+              <div className="flex gap-1 items-center">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+917780396837" className="hover:text-primary transition-smooth">
+                  +91 77803 96837 (Abids Branch)
+                </a>
+              </div>
             </div>
           </div>
 
@@ -109,7 +117,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 Reliable Homeo Clinics. All rights reserved.
+              © {new Date().getFullYear()} Reliable Homeo Clinics. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               <Link to="/privacy" className="hover:text-primary transition-smooth">
@@ -119,11 +127,11 @@ const Footer = () => {
                 Terms of Service
               </Link>
               <a 
-                href="mailto:info@reliablehomeo.com" 
+                href="mailto:reliable.homeo8911@gmail.com" 
                 className="flex items-center space-x-2 hover:text-primary transition-smooth"
               >
                 <Mail className="h-4 w-4" />
-                <span>info@reliablehomeo.com</span>
+                <span>reliable.homeo8911@gmail.com</span>
               </a>
             </div>
           </div>
