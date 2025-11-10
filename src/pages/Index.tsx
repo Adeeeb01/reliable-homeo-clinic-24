@@ -255,7 +255,7 @@ const Index = () => {
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-20 h-20 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                      src="/lovable-uploads/Reliable-doctor.jpg" 
                       alt="Dr. Nomaan Siddiqui" 
                       className="w-full h-full object-cover"
                     />

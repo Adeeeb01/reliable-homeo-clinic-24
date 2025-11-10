@@ -46,9 +46,9 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                src="/lovable-uploads/Reliable-doctor.jpg" 
                 alt="Dr. Nomaan Siddiqui - Lead Homeopathic Physician at Reliable Homeo Clinics" 
-                className="rounded-xl shadow-healing w-full"
+                className="rounded-xl shadow-healing w-full h-[33rem] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-healing opacity-10 rounded-xl"></div>
             </div>
@@ -135,7 +135,7 @@ const About = () => {
                 <div className="space-y-6">
                   <div className="w-32 h-32 rounded-full mx-auto lg:mx-0 overflow-hidden">
                     <img 
-                      src="/lovable-uploads/299114aa-4cb7-4073-a6e1-fd6dcfb93bc7.png" 
+                      src="/lovable-uploads/Reliable-doctor.jpg" 
                       alt="Dr. Nomaan Siddiqui" 
                       className="w-full h-full object-cover"
                     />
