@@ -127,11 +127,11 @@ const Footer = () => {
                 Terms of Service
               </Link>
               <a 
-                href="mailto:reliable.homeo8911@gmail.com" 
+                href="mailto:info@reliablehomeo.com" 
                 className="flex items-center space-x-2 hover:text-primary transition-smooth"
               >
                 <Mail className="h-4 w-4" />
-                <span>reliable.homeo8911@gmail.com</span>
+                <span>info@reliablehomeo.com</span>
               </a>
             </div>
           </div>

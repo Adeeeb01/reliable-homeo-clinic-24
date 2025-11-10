@@ -89,11 +89,11 @@ const Contact = () => {
                   <CardDescription>Send us detailed queries</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-primary mb-4">reliable.homeo8911@gmail.com</p>
+                  <p className="text-sm text-primary mb-4">info@reliablehomeo.com</p>
                   <Button 
                     variant="calm" 
                     className="w-full"
-                    onClick={() => window.location.href = "mailto:reliable.homeo8911@gmail.com"}
+                    onClick={() => window.location.href = "mailto:info@reliablehomeo.com"}
                   >
                     <Mail className="h-4 w-4 mr-2" />
                     Send Email

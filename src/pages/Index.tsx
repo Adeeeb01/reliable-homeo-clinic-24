@@ -253,14 +253,16 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-20 h-20 rounded-full overflow-hidden">
+                  {/* <div className="w-20 h-20 rounded-full overflow-hidden sm:block hidden"> */}
+                  <div className="w-20 h-20 rounded-full overflow-hidden sm:block hidden">
                     <img 
                       src="/lovable-uploads/Reliable-doctor.jpg" 
                       alt="Dr. Nomaan Siddiqui" 
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2 !ml-0 sm:!ml-2"> */}
+                  <div className="space-y-2 !ml-0 sm:!ml-2">
                     <h2 className="text-4xl font-bold text-foreground">
                       Meet Dr. Nomaan Siddiqui
                     </h2>
