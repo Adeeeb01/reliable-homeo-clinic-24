@@ -171,7 +171,7 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-              
+
               {/* Mehdipatnam Clinic */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -261,12 +261,12 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <div>
+                  {/* <div>
                     <h4 className="font-semibold text-foreground mb-2">Parking Facilities</h4>
                     <p className="text-muted-foreground">
                       Both our clinics offer convenient parking spaces for our patients' comfort and convenience.
                     </p>
-                  </div>
+                  </div> */}
                   
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Accessibility</h4>
