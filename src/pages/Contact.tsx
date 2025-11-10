@@ -108,69 +108,6 @@ const Contact = () => {
             </h3>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              {/* Mehdipatnam Clinic */}
-              <Card className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-3 text-xl">
-                    <MapPin className="h-6 w-6 text-primary" />
-                    <span>Mehdipatnam Clinic</span>
-                  </CardTitle>
-                  <CardDescription>Our main clinic in Mehdipatnam</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-foreground">Address</p>
-                        <p className="text-sm text-muted-foreground">
-                          #13-6-437/B/2, Khadar Bagh, Nanal Nagar<br />
-                          (Near Quba Masjid & Premier Hospital)
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center space-x-3">
-                      <Clock className="h-5 w-5 text-primary flex self-start flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-foreground">Working Hours</p>
-                        <p className="text-sm text-muted-foreground">Tuesday & Thursday only: 5 PM - 8 PM</p>
-                        <p className="text-sm text-muted-foreground">Sunday: Closed</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center space-x-3">
-                      <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-foreground">Direct Contact</p>
-                        <p className="text-sm text-muted-foreground">+91 86869 04404</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="pt-9 space-y-3">
-                    <Button 
-                      variant="outline" 
-                      className="w-full"
-                      onClick={() => window.open("https://maps.google.com/?q=13-6-437/B/2+Khadar+Bagh+Nanal+Nagar+Mehdipatnam", "_blank")}
-                    >
-                      <MapPin className="h-4 w-4 mr-2" />
-                      View on Google Maps
-                    </Button>
-                    <Button 
-                      variant="healing" 
-                      className="w-full"
-                      onClick={() => {
-                        const message = "Hello, I would like to visit the Mehdipatnam clinic.";
-                        window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
-                      }}
-                    >
-                      <MessageCircle className="h-4 w-4 mr-2" />
-                      Message for Appointment
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
               {/* Abids Clinic */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -225,6 +162,69 @@ const Contact = () => {
                       className="w-full"
                       onClick={() => {
                         const message = "Hello, I would like to visit the Abids clinic.";
+                        window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
+                      }}
+                    >
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      Message for Appointment
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Mehdipatnam Clinic */}
+              <Card className="shadow-card">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3 text-xl">
+                    <MapPin className="h-6 w-6 text-primary" />
+                    <span>Mehdipatnam Clinic</span>
+                  </CardTitle>
+                  <CardDescription>Our main clinic in Mehdipatnam</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Address</p>
+                        <p className="text-sm text-muted-foreground">
+                          #13-6-437/B/2, Khadar Bagh, Nanal Nagar<br />
+                          (Near Quba Masjid & Premier Hospital)
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3">
+                      <Clock className="h-5 w-5 text-primary flex self-start flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Working Hours</p>
+                        <p className="text-sm text-muted-foreground">Tuesday & Thursday only: 5 PM - 8 PM</p>
+                        <p className="text-sm text-muted-foreground">Sunday: Closed</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                      <div>
+                        <p className="font-medium text-foreground">Direct Contact</p>
+                        <p className="text-sm text-muted-foreground">+91 86869 04404</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pt-9 space-y-3">
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={() => window.open("https://maps.google.com/?q=13-6-437/B/2+Khadar+Bagh+Nanal+Nagar+Mehdipatnam", "_blank")}
+                    >
+                      <MapPin className="h-4 w-4 mr-2" />
+                      View on Google Maps
+                    </Button>
+                    <Button 
+                      variant="healing" 
+                      className="w-full"
+                      onClick={() => {
+                        const message = "Hello, I would like to visit the Mehdipatnam clinic.";
                         window.open(`https://wa.me/919700222005?text=${encodeURIComponent(message)}`, "_blank");
                       }}
                     >
