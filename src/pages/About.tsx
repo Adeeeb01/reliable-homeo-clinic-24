@@ -176,8 +176,7 @@ const About = () => {
                   
                   <div className="bg-muted rounded-lg p-4">
                     <p className="text-sm text-muted-foreground italic text-center">
-                      "Every prescription is individualized, using time-tested homeopathic protocols 
-                      delivered with empathy and precision."
+                      "I treat, He cures."
                     </p>
                   </div>
                 </div>
