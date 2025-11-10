@@ -12,7 +12,7 @@ const About = () => {
               About Reliable Homeo Clinics
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-slide-up">
-              Hyderabad's trusted destination for ethical and scientific homeopathic care since 1949
+              Hyderabad's trusted destination for ethical and scientific homeopathic care since 1955
             </p>
           </div>
         </div>

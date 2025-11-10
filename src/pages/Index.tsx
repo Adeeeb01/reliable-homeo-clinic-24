@@ -23,38 +23,38 @@ const Index = () => {
   const achievements = [
     {
       image: achievement1,
-      title: "Homeopathy Conference Award",
-      description: "Recognition ceremony at the national homeopathy convention for excellence in practice and patient care"
+      title: "IIHP Conference Honor",
+      description: "Honored by Sri Chinna Jeeyar Swamiji for exemplary homeopathic service in 2023."
     },
     {
       image: achievement2,
-      title: "Hospital Partnership Certificate",
-      description: "Certificate of appreciation for collaboration with Aster Prime Hospital in integrative healthcare services"
+      title: "Treasurer Award - IIHP",
+      description: "Aster Prime Hospital recognized as Treasurer of IIHP (Indian Institute of Homeopathic Physicians) Greater Hyderabad for three years consecutively."
     },
     {
       image: achievement3,
-      title: "Dr. Baderuddin Siddiqui Memorial Quiz Master",
-      description: "Honored to conduct the prestigious memorial homeopathy medical quiz competition"
+      title: "Dr. Badreuddin Siddiqui Memorial Quiz",
+      description: "Led the 2024 Dr. Badreuddin Siddiqui Quiz for all Homeopathy Medical Colleges."
     },
     {
       image: achievement4,
-      title: "International Certification",
-      description: "International recognition for advanced training and expertise in homeopathic medicine"
+      title: "Switzerland Oncology Training",
+      description: "Certified in Integrated Oncology Training in Dornach, Switzerland."
     },
     {
       image: achievement5,
-      title: "Telangana State Homeopathic Convention",
-      description: "Felicitated at the 5th Telangana State Homeopathic Convention & Scientific Session"
+      title: "Recognition for Outstanding Contributions to Homeopathy",
+      description: "Honored and facilitated at the prestigious National Homeopathy Seminar 2025."
     },
     {
       image: achievement6,
-      title: "Professional Excellence Award",
-      description: "Award for outstanding contribution to homeopathic medicine and community healthcare"
+      title: "Excellent Service Award 2014",
+      description: "Received the national award for homeopathic service in 2014."
     },
     {
       image: achievement7,
-      title: "Advanced Training Certificate",
-      description: "Certificate for completing advanced homeopathy training from international faculty"
+      title: "PG Homeopathy London Achievement",
+      description: "Secured 3rd position in Asia-Pacific for PG Homeopathy, London."
     }
   ];
 
@@ -273,7 +273,7 @@ const Index = () => {
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
                     Dr. Nomaan Siddiqui continues the 75-year legacy of Reliable Homeo Clinics, 
-                    founded in 1949 by his grandfather, the late Dr. Badreuddin Siddiqui. With 15 years 
+                    founded in 1955 by his grandfather, the late Dr. Badreuddin Siddiqui. With 15+ years 
                     of clinical practice, he combines traditional 
                     homeopathic wisdom with modern medical expertise.
                   </p>
