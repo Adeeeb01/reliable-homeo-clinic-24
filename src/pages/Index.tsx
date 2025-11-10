@@ -561,8 +561,8 @@ const Index = () => {
       <section className="py-16 border-t border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-8 text-center justify-center">
+              <div className="space-y-4 w-96">
                 <div className="h-12 w-12 bg-gradient-healing rounded-full flex items-center justify-center mx-auto">
                   <MessageCircle className="h-6 w-6 text-primary-foreground" />
                 </div>
@@ -575,7 +575,7 @@ const Index = () => {
                 </Button>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 w-96">
                 <div className="h-12 w-12 bg-gradient-trust rounded-full flex items-center justify-center mx-auto">
                   <Heart className="h-6 w-6 text-white" />
                 </div>
@@ -585,19 +585,6 @@ const Index = () => {
                 </p>
                 <Button variant="ghost" size="sm" asChild>
                   <Link to="/blog">Read Blog</Link>
-                </Button>
-              </div>
-
-              <div className="space-y-4">
-                <div className="h-12 w-12 bg-secondary-blue rounded-full flex items-center justify-center mx-auto">
-                  <Shield className="h-6 w-6 text-foreground" />
-                </div>
-                <h4 className="font-semibold text-foreground">Insurance Info</h4>
-                <p className="text-sm text-muted-foreground">
-                  Learn about our affordable pricing and insurance options for homeopathic care.
-                </p>
-                <Button variant="ghost" size="sm" asChild>
-                  <Link to="/insurance">View Pricing</Link>
                 </Button>
               </div>
             </div>
