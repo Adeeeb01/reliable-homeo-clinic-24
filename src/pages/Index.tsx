@@ -89,24 +89,25 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
-      condition: "Chronic Migraine",
-      text: "After years of suffering, I'm finally migraine-free for 6 months. The personalized care is exceptional.",
+      name: "Mohammed Rahman",
+      condition: "Chronic Sinusitis",
+      text: "I was having sinus problems for a long time, and Dr. Noman kindly consulted me even with our different time zones. His treatment worked very well, and my sinus issues are now completely better. I am truly thankful to him.",
       rating: 5
     },
     {
-      name: "Rajesh Kumar", 
-      condition: "Digestive Issues",
-      text: "My chronic acidity completely resolved. The doctors truly understand how to treat the root cause.",
+      name: "Leena Sharma",
+      condition: "Vitamin Deficiency",
+      text: "I visited Dr. Noman for my health concerns, and he quickly found that I had Vitamin B12 and D3 deficiencies. He explained everything clearly and gave me the right treatment. I feel much better now and really appreciate his care.",
       rating: 5
     },
     {
-      name: "Sunitha Reddy",
-      condition: "Child's Health",
-      text: "My 7-year-old's immunity improved dramatically. No more frequent colds and cough episodes.",
+      name: "Tarun Sharma",
+      condition: "Family Medicine",
+      text: "My family and I have been seeing Dr. Noman for all our health needs. He is very patient, knowledgeable, and caring. He listens to us with attention and explains everything in a simple way. We truly value his support and highly recommend him.",
       rating: 5
     }
   ];
+  
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -256,7 +257,7 @@ const Index = () => {
                   {/* <div className="w-20 h-20 rounded-full overflow-hidden sm:block hidden"> */}
                   <div className="w-20 h-20 rounded-full overflow-hidden sm:block hidden">
                     <img 
-                      src="/lovable-uploads/Reliable-doctor.jpg" 
+                      src="/lovable-uploads/drnoman.jpg" 
                       alt="Dr. Nomaan Siddiqui" 
                       className="w-full h-full object-cover"
                     />
