@@ -112,45 +112,6 @@ const BookAppointment = () => {
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Mehdipatnam Clinic */}
-              <Card className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-3">
-                    <MapPin className="h-6 w-6 text-primary" />
-                    <span>Mehdipatnam Clinic</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="space-y-2">
-                    <p className="text-sm text-muted-foreground">
-                      #13-6-437/B/2, Khadar Bagh, Nanal Nagar<br />
-                      (Near Quba Masjid & Premier Hospital)
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center space-x-2 text-sm">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <span className="font-medium">Timings:</span>
-                    <span className="text-muted-foreground">Tue, Thu: 5 PM - 8 PM</span>
-                  </div>
-
-                  <div className="flex items-center space-x-2 text-sm">
-                    <Calendar className="h-4 w-4 text-primary" />
-                    <span className="font-medium">Available:</span>
-                    <span className="text-success">Tuesday and Thursday</span>
-                  </div>
-
-                  <Button 
-                    variant="outline" 
-                    className="w-full mt-4 place-content-end"
-                    onClick={() => window.open("https://maps.google.com/?q=Mehdipatnam+Reliable+Homeo+Clinic", "_blank")}
-                  >
-                    <MapPin className="h-4 w-4 mr-2" />
-                    View on Google Maps
-                  </Button>
-                </CardContent>
-              </Card>
-
               {/* Abids Clinic */}
               <Card className="shadow-card">
                 <CardHeader>
@@ -188,6 +149,46 @@ const BookAppointment = () => {
                     variant="outline" 
                     className="w-full mt-4"
                     onClick={() => window.open("https://maps.google.com/?q=Abids+Reliable+Homeo+Clinic", "_blank")}
+                  >
+                    <MapPin className="h-4 w-4 mr-2" />
+                    View on Google Maps
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              
+              {/* Mehdipatnam Clinic */}
+              <Card className="shadow-card">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3">
+                    <MapPin className="h-6 w-6 text-primary" />
+                    <span>Mehdipatnam Clinic</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-sm text-muted-foreground">
+                      #13-6-437/B/2, Khadar Bagh, Nanal Nagar<br />
+                      (Near Quba Masjid & Premier Hospital)
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <span className="font-medium">Timings:</span>
+                    <span className="text-muted-foreground">Tue, Thu: 5 PM - 8 PM</span>
+                  </div>
+
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Calendar className="h-4 w-4 text-primary" />
+                    <span className="font-medium">Available:</span>
+                    <span className="text-success">Tuesday and Thursday</span>
+                  </div>
+
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-4 place-content-end"
+                    onClick={() => window.open("https://maps.google.com/?q=Mehdipatnam+Reliable+Homeo+Clinic", "_blank")}
                   >
                     <MapPin className="h-4 w-4 mr-2" />
                     View on Google Maps
