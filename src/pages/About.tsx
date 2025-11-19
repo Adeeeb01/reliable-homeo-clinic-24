@@ -46,7 +46,8 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/Reliable-doctor.jpg" 
+                // src="/lovable-uploads/Reliable-doctor.jpg" 
+                src="/lovable-uploads/drnoman.jpg" 
                 alt="Dr. Nomaan Siddiqui - Lead Homeopathic Physician at Reliable Homeo Clinics" 
                 className="rounded-xl shadow-healing w-full h-[33rem] object-cover"
               />
@@ -135,7 +136,7 @@ const About = () => {
                 <div className="space-y-6">
                   <div className="w-32 h-32 rounded-full mx-auto lg:mx-0 overflow-hidden">
                     <img 
-                      src="/lovable-uploads/Reliable-doctor.jpg" 
+                      src="/lovable-uploads/drnoman.jpg" 
                       alt="Dr. Nomaan Siddiqui" 
                       className="w-full h-full object-cover"
                     />
@@ -273,12 +274,13 @@ const About = () => {
               Hear what our patients say about their healing journey with us
             </p>
             <a 
-              href="https://www.lybrate.com/hyderabad/doctor/dr-nomaan-siddiqui-homeopath"
+              // href="https://www.lybrate.com/hyderabad/doctor/dr-nomaan-siddiqui-homeopath"
+              href="https://www.google.com/maps/place/Reliable+Homoeo+Centre/@17.3870688,78.4751457,17z/data=!4m8!3m7!1s0x3bcb99d68773e9cd:0x23d3bf335903220e!8m2!3d17.3870688!4d78.477726!9m1!1b1!16s%2Fg%2F11b7q5_r7w?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gradient-healing text-primary-foreground rounded-lg hover:shadow-healing transition-all duration-300"
             >
-              View All Reviews on Lybrate
+              View All Reviews on Google
             </a>
           </div>
 
