@@ -5,54 +5,37 @@ import { Star, Quote, MessageCircle } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      condition: "Chronic Migraine",
-      location: "Mehdipatnam",
-      rating: 5,
-      text: "After struggling with severe migraines for years, Dr. at Reliable Homeo Clinics helped me find relief through natural homeopathic treatment. I've been migraine-free for 6 months now. The personalized care and attention to detail is exceptional.",
-      duration: "3 months of treatment"
+      name: "Mohammed Rahman",
+      condition: "Chronic Sinusitis",
+      text: "I was having sinus problems for a long time, and Dr. Noman kindly consulted me even with our different time zones. His treatment worked very well, and my sinus issues are now completely better. I am truly thankful to him.",
+      rating: 5
     },
     {
-      name: "Rajesh Kumar",
-      condition: "Digestive Issues",
-      location: "Abids",
-      rating: 5,
-      text: "I was skeptical about homeopathy initially, but the results speak for themselves. My chronic acidity and digestive problems have completely resolved. The doctors here truly understand how to treat the root cause, not just symptoms.",
-      duration: "4 months of treatment"
+      name: "Leena Sharma",
+      condition: "Vitamin Deficiency",
+      text: "I visited Dr. Noman for my health concerns, and he quickly found that I had Vitamin B12 and D3 deficiencies. He explained everything clearly and gave me the right treatment. I feel much better now and really appreciate his care.",
+      rating: 5
     },
     {
-      name: "Sunitha Reddy",
-      condition: "Child's Recurring Cold & Cough",
-      location: "Mehdipatnam",
-      rating: 5,
-      text: "My 7-year-old was constantly falling sick with colds and cough. After treatment at Reliable Homeo, his immunity has improved dramatically. He hasn't had a single episode in the last 8 months. Highly recommend for pediatric care.",
-      duration: "2 months of treatment"
+      name: "Tarun Sharma",
+      condition: "Family Medicine",
+      text: "My family and I have been seeing Dr. Noman for all our health needs. He is very patient, knowledgeable, and caring. He listens to us with attention and explains everything in a simple way. We truly value his support and highly recommend him.",
+      rating: 5
     },
     {
-      name: "Venkat Rao",
-      condition: "Joint Pain & Arthritis",
-      location: "Abids",
-      rating: 5,
-      text: "Years of joint pain made simple daily activities difficult. The homeopathic treatment here has given me my life back. I can now walk, climb stairs, and enjoy activities without constant pain. Truly grateful to the team.",
-      duration: "6 months of treatment"
+      name: "Mohammed Furquan",
+      condition: "General Medicine",
+      text: "Dr. Noman is the best doctor I have ever met. I was suffering from a condition that other doctors could not help me with, but his treatment and guidance helped me recover quickly. Today I am healthy and living happily with my family, all thanks to him.",
+      rating: 5
     },
     {
-      name: "Kavitha Nair",
-      condition: "Stress & Anxiety",
-      location: "Mehdipatnam",
-      rating: 5,
-      text: "The holistic approach at Reliable Homeo helped me overcome severe work stress and anxiety. The doctors took time to understand my complete situation and provided treatment that addressed both my mental and physical symptoms.",
-      duration: "5 months of treatment"
-    },
-    {
-      name: "Arun Patel",
-      condition: "Skin Allergies",
-      location: "Abids",
-      rating: 5,
-      text: "Chronic eczema had affected my confidence for years. Various treatments failed, but homeopathy worked wonderfully. My skin is now clear and healthy. The natural approach with zero side effects is what convinced me.",
-      duration: "4 months of treatment"
+      name: "Adeeb Mirza",
+      condition: "Urological Care",
+      text: "I was visiting from Canada when my mother suddenly had severe pain from a large kidney stone. We were very worried and did not know what to do, but Dr. Noman supported us from the first visit. He explained everything with kindness and gave a treatment that helped my mother pass the stone within one month. His care and compassion meant so much to us during this difficult time. We are very grateful to him.",
+      rating: 5
     }
   ];
+  
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -119,7 +102,7 @@ const Testimonials = () => {
                       <div className="space-y-1">
                         <h3 className="font-semibold text-foreground text-lg">{testimonial.name}</h3>
                         <p className="text-sm text-trust-blue font-medium">{testimonial.condition}</p>
-                        <p className="text-xs text-muted-foreground">{testimonial.location} Clinic</p>
+                        {/* <p className="text-xs text-muted-foreground">{testimonial.location} Clinic</p> */}
                       </div>
                       <div className="flex space-x-1">
                         {renderStars(testimonial.rating)}
@@ -133,9 +116,9 @@ const Testimonials = () => {
                     </blockquote>
                     
                     <div className="flex justify-between items-center text-xs text-muted-foreground pt-4 border-t border-border">
-                      <span className="bg-secondary px-3 py-1 rounded-full">
+                      {/* <span className="bg-secondary px-3 py-1 rounded-full">
                         {testimonial.duration}
-                      </span>
+                      </span> */}
                       <span>⭐ Verified Patient</span>
                     </div>
                   </CardContent>
