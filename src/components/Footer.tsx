@@ -36,25 +36,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Mehdipatnam Clinic */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Mehdipatnam Clinic</h3>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <div className="flex items-start space-x-2">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span className="leading-relaxed">
-                  #13-6-437/B/2, Khadar Bagh,<br />
-                  Nanal Nagar
-                  <br />
-                  (Near Quba Masjid & Premier Hospital)
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 flex-shrink-0" />
-                <span>Tuesday & Thursday Only: 5 PM - 8 PM</span>
-              </div>
-            </div>
-          </div>
 
           {/* Abids Clinic */}
           <div className="space-y-4">
@@ -80,6 +61,27 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
+          {/* Mehdipatnam Clinic */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Mehdipatnam Clinic</h3>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <span className="leading-relaxed">
+                  #13-6-437/B/2, Khadar Bagh,<br />
+                  Nanal Nagar
+                  <br />
+                  (Near Quba Masjid & Premier Hospital)
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 flex-shrink-0" />
+                <span>Tuesday & Thursday Only: 5 PM - 8 PM</span>
+              </div>
+            </div>
+          </div>
+
 
           {/* Quick Links */}
           <div className="space-y-4">
