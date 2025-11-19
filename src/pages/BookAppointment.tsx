@@ -9,7 +9,7 @@ const BookAppointment = () => {
   };
 
   const handleBookOnline = () => {
-    window.open("https://calendly.com/reliable-homeo8911", "_blank");
+    window.open("https://calendly.com/reliablehomeo-info", "_blank");
   };
 
 
