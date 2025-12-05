@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "reliable-homeo-clinic-24",
+  // base: "reliab",
   server: {
     host: "::",
     port: 8080,
