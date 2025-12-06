@@ -133,7 +133,7 @@ const BookAppointment = () => {
                     <span className="font-medium">Timings:</span>
                     <div className="flex flex-col">
                       <span className="text-muted-foreground">Mon-Thu & Sat: 11:30 AM - 2:30 PM</span>
-                      <span className="text-muted-foreground">Mon, Wed, Sat: 6 AM - 9 PM</span>
+                      <span className="text-muted-foreground">Mon, Wed, Sat: 6 PM - 9 PM</span>
                       <span className="text-muted-foreground">Sun: 1 PM - 3 PM</span>
 
                     </div>

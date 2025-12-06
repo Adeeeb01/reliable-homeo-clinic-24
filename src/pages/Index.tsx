@@ -23,7 +23,7 @@ const Index = () => {
   const achievements = [
     {
       image: achievement1,
-      title: "IIHP Conference Honor",
+      title: "IIHP Conference Honour",
       description: "Honored by Sri Chinna Jeeyar Swamiji for exemplary homeopathic service in 2023."
     },
     {
@@ -413,7 +413,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">Monday, Wednesday & Saturday: 6 AM - 9 PM</span>
+                    <span className="text-muted-foreground">Monday, Wednesday & Saturday: 6 PM - 9 PM</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Clock className="h-4 w-4 text-primary" />

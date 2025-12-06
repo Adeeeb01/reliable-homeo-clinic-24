@@ -134,7 +134,7 @@ const Contact = () => {
                       <div>
                         <p className="font-medium text-foreground">Working Hours</p>
                         <p className="text-sm text-muted-foreground">Monday to Thursday & Saturday: 11:30 AM - 2:30 PM</p>
-                        <p className="text-sm text-muted-foreground">Monday, Wednesday & Saturday: 6 AM - 9 PM</p>
+                        <p className="text-sm text-muted-foreground">Monday, Wednesday & Saturday: 6 PM - 9 PM</p>
                         <p className="text-sm text-muted-foreground">Sunday: 1 PM - 3 PM</p>
                       </div>
                     </div>
